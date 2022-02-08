@@ -50,5 +50,6 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 </style>
