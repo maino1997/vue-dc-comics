@@ -69,7 +69,6 @@ export default {
 <style scoped lang="scss">
 @import "Utilities";
 header {
-  padding: 5px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
