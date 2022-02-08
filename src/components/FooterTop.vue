@@ -43,15 +43,22 @@
         </div>
       </div>
       <div class="big-col">
-        <img src="../assets/img/dc-logo-bg.png" alt="logo-dc" />
+        <img src="../assets/img/dc-logo-bg.png" alt="logo-dc" id="logo-dc" />
       </div>
     </div>
+
+    <FooterBottom />
   </footer>
 </template>
 
 <script>
+import FooterBottom from "./FooterBottom.vue";
+
 export default {
   name: "FooterTop",
+  components: {
+    FooterBottom,
+  },
   data() {
     return {
       links: [
@@ -115,12 +122,17 @@ footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: calc(100% - 260px);
+}
+
+#logo-dc {
+  height: 450px;
 }
 
 ul {
-  margin-top: 40px;
+  margin-top: 30px;
   li {
-    margin: 5px 0;
+    // margin: 2px 0;
   }
   a {
     color: grey;

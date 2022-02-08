@@ -82,9 +82,10 @@ header {
       a {
         height: 107px;
         line-height: 107px;
+        font-weight: 600;
         &:hover {
           color: #0c7cec;
-          border-bottom: 4px solid #0c7cec;
+          border-bottom: 3px solid #0c7cec;
         }
       }
     }
