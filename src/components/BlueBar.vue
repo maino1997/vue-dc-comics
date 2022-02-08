@@ -47,7 +47,7 @@ export default {
   position: fixed;
   left: 0;
   right: 0;
-  top: 27%;
+  top: 26%;
   height: 100px;
   background-color: $my-blue;
 }
