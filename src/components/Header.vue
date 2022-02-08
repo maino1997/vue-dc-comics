@@ -67,7 +67,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "Utilities";
 header {
+  padding: 5px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,8 +86,8 @@ header {
         line-height: 107px;
         font-weight: 600;
         &:hover {
-          color: #0c7cec;
-          border-bottom: 3px solid #0c7cec;
+          color: $my-blue;
+          border-bottom: 3px solid $my-blue;
         }
       }
     }

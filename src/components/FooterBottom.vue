@@ -2,22 +2,14 @@
   <div class="footer-bottom">
     <div class="container">
       <!-- <div class="content"> -->
-      <div class="left">
+      <div class="left flex-center">
         <a href="#">Sign Up Now</a>
       </div>
       <div class="right">
         <ul>
           <li><h3>FOLLOW US</h3></li>
-          <li>
-            <img src="../assets/img/footer-facebook.png" alt="facebook" />
-          </li>
-          <li><img src="../assets/img/footer-twitter.png" alt="facebook" /></li>
-          <li><img src="../assets/img/footer-youtube.png" alt="facebook" /></li>
-          <li>
-            <img src="../assets/img/footer-pinterest.png" alt="facebook" />
-          </li>
-          <li>
-            <img src="../assets/img/footer-periscope.png" alt="facebook" />
+          <li v-for="(url, index) in ulrs" :key="index">
+            <img :src="url.source" alt="icon" />
           </li>
         </ul>
       </div>
@@ -29,10 +21,32 @@
 <script>
 export default {
   name: "FooterBottom",
+  data() {
+    return {
+      urls: [
+        {
+          source: "../assets/img/footer-facebook.png",
+        },
+        {
+          source: "../assets/img/footer-twitter.png",
+        },
+        {
+          source: "../assets/img/footer-youtube.png",
+        },
+        {
+          source: "../assets/img/footer-pinterest.png",
+        },
+        {
+          source: "../assets/img/footer-periscope.png",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
+@import "Utilities";
 .footer-bottom {
   height: 100px;
   background-color: rgb(34, 32, 32);
@@ -51,9 +65,6 @@ export default {
 }
 
 .left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   a {
     border: 2px solid #0c7cec;
     color: white;
@@ -63,7 +74,7 @@ export default {
 
 .right {
   h3 {
-    color: #0c7cec;
+    color: $my-blue;
   }
   ul {
     display: flex;

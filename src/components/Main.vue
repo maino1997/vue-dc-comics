@@ -13,11 +13,10 @@ export default {
 
 <style scoped lang="scss">
 main {
-  padding-top: 20px;
   background-color: black;
   text-align: center;
 }
 h2 {
-  padding: 50px;
+  padding: 30px;
 }
 </style>

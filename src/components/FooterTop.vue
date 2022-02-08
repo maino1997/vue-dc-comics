@@ -119,6 +119,7 @@ export default {
 }
 
 footer {
+  padding-top: 80px;
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,17 +127,15 @@ footer {
 }
 
 #logo-dc {
-  height: 450px;
+  height: 400px;
 }
 
 ul {
-  margin-top: 30px;
-  li {
-    // margin: 2px 0;
-  }
+  margin-top: 20px;
+
   a {
     color: grey;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 </style>
