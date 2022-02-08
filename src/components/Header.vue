@@ -1,97 +1,93 @@
 <template>
-<header>
+  <header>
     <div>
-        <img src="../assets/img/dc-logo.png">
+      <img src="../assets/img/dc-logo.png" />
     </div>
     <div>
-        <ul>
-            <li v-for="(link , index) in links" :key="index"><a href="#">{{link.text}}</a></li>
-        </ul>
+      <ul>
+        <li v-for="(link, index) in links" :key="index">
+          <a href="#">{{ link.text }}</a>
+        </li>
+      </ul>
     </div>
-</header>
+  </header>
 </template>
 
 <script>
-
-
 export default {
-  name: 'Header',
-  components: {
-    
+  name: "Header",
+  components: {},
+  data() {
+    return {
+      links: [
+        {
+          text: "CHARACHTERS",
+          url: "#",
+        },
+        {
+          text: "COMICS",
+          url: "#",
+        },
+        {
+          text: "MOVIES",
+          url: "#",
+        },
+        {
+          text: "TV",
+          url: "#",
+        },
+        {
+          text: "GAMES",
+          url: "#",
+        },
+        {
+          text: "COLLECTIEBILITES",
+          url: "#",
+        },
+        {
+          text: "VIDEOS",
+          url: "#",
+        },
+        {
+          text: "FANS",
+          url: "#",
+        },
+        {
+          text: "NEWS",
+          url: "#",
+        },
+        {
+          text: "SHOP",
+          url: "#",
+        },
+      ],
+    };
   },
-  data (){
-      return {
-          links: [
-          {
-              text: "CHARACHTERS",
-              url : "#"
-          },
-          {
-              text: "COMICS",
-              url : "#"
-          },
-          {
-              text: "MOVIES",
-              url : "#"
-          },
-          {
-              text: "TV",
-              url : "#"
-          },
-          {
-              text: "GAMES",
-              url : "#"
-          },
-          {
-              text: "COLLECTIEBILITES",
-              url : "#"
-          },
-          {
-              text: "VIDEOS",
-              url : "#"
-          },
-          {
-              text: "FANS",
-              url : "#"
-          },
-          {
-              text: "NEWS",
-              url : "#"
-          },
-          {
-              text: "SHOP",
-              url : "#"
-          },
-      ]
-      }
-  }
-}
+};
 </script>
 
 <style scoped lang="scss">
-header{
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    ul{
-        display:flex;
+    height: 107px;
+    li {
+      list-style: none;
+      display: flex;
+      height: 100%;
+      margin: 0 10px;
+      a {
         height: 107px;
-        li{
-            list-style: none;
-            display: flex;
-            height: 100%;
-            margin: 0 10px;
-            a{
-                text-decoration: none;
-                color: black;
-                height: 107px;
-                line-height: 107px;
-                &:hover{
-                    color: #0C7CEC;
-                    border-bottom: 4px solid #0C7CEC;
-                }
-            }
+        line-height: 107px;
+        &:hover {
+          color: #0c7cec;
+          border-bottom: 4px solid #0c7cec;
         }
+      }
     }
+  }
 }
 </style>
