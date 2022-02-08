@@ -15,7 +15,7 @@
 
 
 export default {
-  name: 'App',
+  name: 'Header',
   components: {
     
   },
