@@ -8,7 +8,7 @@
       <div class="right">
         <ul>
           <li><h3>FOLLOW US</h3></li>
-          <li v-for="(url, index) in ulrs" :key="index">
+          <li v-for="(url, index) in urls" :key="index">
             <img :src="url.source" alt="icon" />
           </li>
         </ul>
@@ -25,19 +25,19 @@ export default {
     return {
       urls: [
         {
-          source: "../assets/img/footer-facebook.png",
+          source: require("../assets/img/footer-facebook.png"),
         },
         {
-          source: "../assets/img/footer-twitter.png",
+          source: require("../assets/img/footer-twitter.png"),
         },
         {
-          source: "../assets/img/footer-youtube.png",
+          source: require("../assets/img/footer-youtube.png"),
         },
         {
-          source: "../assets/img/footer-pinterest.png",
+          source: require("../assets/img/footer-pinterest.png"),
         },
         {
-          source: "../assets/img/footer-periscope.png",
+          source: require("../assets/img/footer-periscope.png"),
         },
       ],
     };
