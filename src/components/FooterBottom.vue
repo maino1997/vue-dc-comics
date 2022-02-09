@@ -48,9 +48,9 @@ export default {
 <style scoped lang="scss">
 @import "Utilities";
 .footer-bottom {
-  height: 100px;
+  height: 80px;
   background-color: rgb(34, 32, 32);
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;

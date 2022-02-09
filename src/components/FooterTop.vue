@@ -123,7 +123,8 @@ export default {
 
 footer {
   position: relative;
-  padding-top: 80px;
+  padding-top: 85px;
+  padding-bottom: 65px;
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,7 +132,7 @@ footer {
 }
 
 #logo-dc {
-  height: 400px;
+  height: 420px;
 }
 
 ul {
