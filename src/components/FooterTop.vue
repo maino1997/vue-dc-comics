@@ -6,40 +6,31 @@
         <div class="col">
           <ul>
             <li><h2>DC COMICS</h2></li>
-            <li v-for="(link, index) in links" :key="index">
-              <a href="#">{{ link.text }}</a>
+            <li v-for="(link, index) in firstUl" :key="index">
+              <a href="link.url">{{ link.text }}</a>
             </li>
           </ul>
           <ul>
             <li><h2>SHOP</h2></li>
-            <li><a href="#">Shop DC</a></li>
-            <li><a href="#">Shop DC Collectables</a></li>
+            <li v-for="(link, index) in secondUl" :key="index">
+              <a href="link.url">{{ link.text }}</a>
+            </li>
           </ul>
         </div>
         <div class="col">
           <ul>
             <li><h2>DC</h2></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Ad Choices</a></li>
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Subscriptions</a></li>
-            <li><a href="#">Talent Workshop</a></li>
-            <li><a href="#">CPSC Certificate</a></li>
-            <li><a href="#">Ratings</a></li>
-            <li><a href="#">Shop Help</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li v-for="(link, index) in thirdUl" :key="index">
+              <a href="link.url">{{ link.text }}</a>
+            </li>
           </ul>
         </div>
         <div class="col">
           <ul>
             <li><h2>SITES</h2></li>
-            <li><a href="#">DC</a></li>
-            <li><a href="#">MAD Magazine</a></li>
-            <li><a href="#">DC Kids</a></li>
-            <li><a href="#">DC Universe</a></li>
-            <li><a href="#">DC Power Visa</a></li>
+            <li v-for="(link, index) in fourthUl" :key="index">
+              <a href="link.url">{{ link.text }}</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,52 +53,7 @@ export default {
     FooterBottom,
     BlueBar,
   },
-  data() {
-    return {
-      links: [
-        {
-          text: "CHARACHTERS",
-          url: "#",
-        },
-        {
-          text: "COMICS",
-          url: "#",
-        },
-        {
-          text: "MOVIES",
-          url: "#",
-        },
-        {
-          text: "TV",
-          url: "#",
-        },
-        {
-          text: "GAMES",
-          url: "#",
-        },
-        {
-          text: "COLLECTIEBILITES",
-          url: "#",
-        },
-        {
-          text: "VIDEOS",
-          url: "#",
-        },
-        {
-          text: "FANS",
-          url: "#",
-        },
-        {
-          text: "NEWS",
-          url: "#",
-        },
-        {
-          text: "SHOP",
-          url: "#",
-        },
-      ],
-    };
-  },
+  props: ["firstUl", "secondUl", "thirdUl", "fourthUl"],
 };
 </script>
 
@@ -123,12 +69,11 @@ export default {
 
 footer {
   position: relative;
-  padding-top: 85px;
+  padding-top: 90px;
   padding-bottom: 65px;
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: calc(100% - 260px);
 }
 
 #logo-dc {
@@ -139,8 +84,8 @@ ul {
   margin-top: 20px;
 
   a {
-    color: grey;
-    font-size: 10px;
+    color: rgb(180, 161, 161);
+    font-size: 13px;
   }
 }
 </style>

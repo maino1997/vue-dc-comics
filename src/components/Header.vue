@@ -3,7 +3,7 @@
     <div>
       <img src="../assets/img/dc-logo.png" />
     </div>
-    <div>
+    <div class="list-cont">
       <ul>
         <li v-for="(link, index) in links" :key="index">
           <a href="#">{{ link.text }}</a>
@@ -72,24 +72,31 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  ul {
-    display: flex;
-    height: 107px;
-    li {
-      list-style: none;
+  .list-cont {
+    height: 100%;
+    ul {
       display: flex;
-      height: 100%;
-      margin: 0 10px;
-      a {
-        height: 107px;
-        line-height: 107px;
-        font-weight: 600;
-        &:hover {
-          color: $my-blue;
-          border-bottom: 3px solid $my-blue;
+      height: 127px;
+      li {
+        list-style: none;
+        display: flex;
+        height: 100%;
+        margin: 0 10px;
+        a {
+          height: 100%;
+          line-height: 127px;
+          font-weight: 600;
+          &:hover {
+            color: $my-blue;
+            border-bottom: 3px solid $my-blue;
+          }
         }
       }
     }
   }
+}
+
+img {
+  padding: 10px 0;
 }
 </style>

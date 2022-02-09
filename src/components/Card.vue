@@ -24,6 +24,6 @@ figcaption {
 
 img {
   width: 100%;
-  height: 150px;
+  height: 170px;
 }
 </style>
