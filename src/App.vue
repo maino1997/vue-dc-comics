@@ -2,7 +2,6 @@
   <div>
     <Header />
     <Main />
-    <Blue-bar />
     <FooterTop />
   </div>
 </template>
@@ -11,7 +10,6 @@
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import FooterTop from "./components/FooterTop.vue";
-import BlueBar from "./components/BlueBar.vue";
 
 export default {
   name: "App",
@@ -19,7 +17,6 @@ export default {
     Header,
     Main,
     FooterTop,
-    BlueBar,
   },
 };
 </script>

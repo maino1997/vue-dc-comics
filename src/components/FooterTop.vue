@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <Blue-bar />
     <div class="container">
       <div class="big-col">
         <div class="col">
@@ -53,11 +54,13 @@
 
 <script>
 import FooterBottom from "./FooterBottom.vue";
+import BlueBar from "./BlueBar.vue";
 
 export default {
   name: "FooterTop",
   components: {
     FooterBottom,
+    BlueBar,
   },
   data() {
     return {
@@ -119,6 +122,7 @@ export default {
 }
 
 footer {
+  position: relative;
   padding-top: 80px;
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;

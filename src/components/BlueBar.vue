@@ -44,10 +44,10 @@ export default {
 <style scoped lang="scss">
 @import "Utilities";
 .blue-bar {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 26%;
+  top: 0;
   height: 100px;
   background-color: $my-blue;
 }
