@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "Utilities";
+@import "../assets/sass/Utilities";
 .blue-bar {
   position: absolute;
   left: 0;

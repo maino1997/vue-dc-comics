@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "Utilities";
+@import "../assets/sass/Utilities";
 header {
   display: flex;
   justify-content: space-around;

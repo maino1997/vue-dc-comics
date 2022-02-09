@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "Utilities";
+@import "../assets/sass/Utilities";
 .footer-bottom {
   height: 80px;
   background-color: rgb(34, 32, 32);

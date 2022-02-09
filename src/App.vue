@@ -242,33 +242,7 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  margin: auto;
-}
-
-.container-small {
-  max-width: 1000px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: center;
-}
-
-ul {
-  list-style: none;
-}
-
+@import "./assets/sass/style.scss";
 h2 {
   color: white;
 }

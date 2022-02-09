@@ -1,10 +1,12 @@
 <template>
   <main>
-    <button id="top-button">CURRENT SERIES</button>
-    <div class="container-small">
-      <Card v-for="(item, index) in cards" :key="index" :carta="item" />
+    <div class="container-no-flex">
+      <button id="top-button">CURRENT SERIES</button>
+      <div class="container-small">
+        <Card v-for="(item, index) in cards" :key="index" :carta="item" />
+      </div>
+      <ButtonPrimary />
     </div>
-    <ButtonPrimary />
   </main>
 </template>
 
@@ -23,7 +25,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "Utilities";
+@import "../assets/sass/Utilities";
 main {
   background-color: black;
   text-align: center;
